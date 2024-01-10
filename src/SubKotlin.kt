@@ -1,3 +1,5 @@
+import java.util.Stack
+
 fun main(args: Array<String>) {
     var array = arrayOf(10) //모든 형태의 배열 크기 10의 배열
     array = arrayOf(1,2,3,4,5,6,67)
@@ -19,5 +21,18 @@ fun main(args: Array<String>) {
         println(i)
         println(dynamicarr.size)
     }
+
+    val stack = Stack<String>() //스택: last in first out 먼저 들어온 데이터가 가장 먼저 나간다.
+    stack.push("string")
+    stack.pop()
+    println(stack.size)
+
+    /**
+     * 스택 활용
+     * 스택을 활용하면 "재귀함수"를 필요로하는 소스코드에 "재귀함수"를 사용하지 않고 구현할 수 있습니다.
+     * 웹 브라우저의  방문기록에서도 스택의 특징을 활용하여 "뒤로가기"를 구현할 수 있습니다.
+     * 프로그램의 실행취소((Undo)에서 활용됩니다.
+     * 후위표기 계산식에서 활용됩니다
+     */
 
 }
